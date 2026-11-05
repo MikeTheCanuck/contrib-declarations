@@ -1,0 +1,28 @@
+{
+  "name": "TransUnion",
+  "terms": {
+    "Terms of Service": {
+      "fetch": "https://www.transunion.com/legal/terms-of-use",
+      "select": [
+        {
+          "startBefore": "h1",
+          "endBefore": "#page-footer"
+        }
+      ],
+      "executeClientScripts": true
+    },
+    "Privacy Policy": {
+      "fetch": "https://www.transunion.com/privacy/transunion",
+      "select": [
+        {
+          "startBefore": "h1",
+          "endBefore": "#page-footer"
+        }
+      ],
+      "remove": [
+        ".cmp-articleNav"
+      ],
+      "executeClientScripts": true
+    }
+  }
+}
